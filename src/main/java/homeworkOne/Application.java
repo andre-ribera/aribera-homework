@@ -9,9 +9,10 @@ public class Application {
         HelloWorld.helloWorld();
 
         /* Sort */
+        System.out.println("\n*** Sorting Algorithm ***");
         int[] array = randomIntArray(100);
         System.out.println("Array BEFORE sort: " + Arrays.toString(array));
-//        SolvdSort.bubbleSort(array);
+        SolvdSort.bubbleSort(array);
 //        SolvdSort.insertionSort(array);
 //        SolvdSort.mergeSort(array); TODO: not working yet
         System.out.println("Array AFTER sort: " + Arrays.toString(array));
