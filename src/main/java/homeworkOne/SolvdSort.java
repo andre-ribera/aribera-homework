@@ -48,7 +48,7 @@ public class SolvdSort {
         return array;
     }
 
-    //    TODO: Finish Merge sort
+//    TODO: Finish Merge sort
     public static int[] mergeSort(int[] array) {
         if (array.length == 1) {
             return array;
@@ -87,7 +87,7 @@ public class SolvdSort {
 
         return arrayThree;
     }
-//    Quicksort
+//    TODO: Finish Quicksort
 
     /* Insertion sort */
     public static int[] insertionSort(int[] array) {
