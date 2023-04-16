@@ -10,7 +10,9 @@ public class SuperMarket {
     public static void main(String[] args) {
         Karen karen = new Karen();
         Customer marge = new Customer();
-        Bagger bagBoy = new Bagger();
+        Bagger bobby = new Bagger();
+
+
 
     }
 }
