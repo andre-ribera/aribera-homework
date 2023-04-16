@@ -5,11 +5,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Application {
+
     public static void main(String[] args) {
         /* Hello World */
         HelloWorld.helloWorld();
 
         /* Print User Provided Info*/
+        System.out.println("\n*** Print Statement ***");
         System.out.println(PrintUserInfo.printUserInfo("Andre", 37, "Phoenix"));
 
         /* Sort */
