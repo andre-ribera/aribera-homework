@@ -1,10 +1,25 @@
 package homeworkTwo.Employee;
 
+import homeworkTwo.Item;
+import homeworkTwo.ShoppingCart;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Bagger extends Employee {
     private boolean collectCarts;
 
-    public List<Items> bagGroceries(){
+    public ArrayList<Item> bagGroceries(ShoppingCart groceries){
+        Random random = new Random();
+        byte dent = (byte) random.nextInt(99);
+        ArrayList<Item> bags = new ArrayList<>(groceries.getContents().size());
 
+        for(Item item : groceries.getContents()){
+            item.isDented(dent);
+            bags.add(item);
+        }
+        return bags;
     }
 
     public boolean isCollectCarts() {

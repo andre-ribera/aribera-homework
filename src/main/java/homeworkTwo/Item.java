@@ -34,8 +34,11 @@ public abstract class Item {
         this.amountInStock = amountInStock;
     }
 
-    public boolean isDented() {
-        return isDented;
+    public boolean isDented(byte num) {
+        if(num == 6 || num == 66){
+            return true;
+        }
+        return false;
     }
 
     public void setDented(boolean dented) {
