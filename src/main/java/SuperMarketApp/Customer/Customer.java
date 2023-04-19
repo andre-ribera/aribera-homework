@@ -1,8 +1,6 @@
-package homeworkTwo.Customer;
+package SuperMarketApp.Customer;
 
-import homeworkTwo.ShoppingCart;
-
-import java.util.ArrayList;
+import SuperMarketApp.ShoppingCart;
 
 public class Customer {
     private boolean askForAssistance;

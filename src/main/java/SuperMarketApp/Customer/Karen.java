@@ -1,4 +1,4 @@
-package homeworkTwo.Customer;
+package SuperMarketApp.Customer;
 
 public class Karen extends Customer {
     private boolean askForManager;

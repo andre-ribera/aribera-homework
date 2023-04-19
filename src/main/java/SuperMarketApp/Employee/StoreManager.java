@@ -1,4 +1,4 @@
-package homeworkTwo.Employee;
+package SuperMarketApp.Employee;
 
 public class StoreManager extends Manager {
 

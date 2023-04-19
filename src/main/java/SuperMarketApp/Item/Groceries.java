@@ -1,7 +1,6 @@
-package homeworkTwo.Item;
+package SuperMarketApp.Item;
 
-import homeworkTwo.Department.Department;
-import homeworkTwo.Department.ProduceDepartment;
+import SuperMarketApp.Department.ProduceDepartment;
 
 public  class Groceries extends Item {
 
@@ -17,6 +16,7 @@ public  class Groceries extends Item {
                 "amountInStock = " + amountInStock + "\n" +
                 "price = " + price + "\n" +
                 "cost = " + cost + "\n" +
+                "dented = " + isDented + "\n" +
                 "*******\n";
     }
 }

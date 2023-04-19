@@ -1,9 +1,8 @@
-package homeworkTwo;
+package SuperMarketApp;
 
-import homeworkTwo.Item.Item;
+import SuperMarketApp.Item.Item;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public class ShoppingCart {

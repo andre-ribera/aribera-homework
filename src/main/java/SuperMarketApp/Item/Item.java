@@ -1,8 +1,9 @@
-package homeworkTwo.Item;
+package SuperMarketApp.Item;
 
-import homeworkTwo.Department.Department;
+import SuperMarketApp.Department.Department;
 
 import java.util.Objects;
+import java.util.Random;
 
 public abstract class Item {
     protected String type;
@@ -12,7 +13,7 @@ public abstract class Item {
     protected double cost;
     protected boolean isDented;
 
-    public Item(String type, int amountInStock, double price, double cost){
+    public Item(String type, int amountInStock, double price, double cost) {
         this.type = type;
         this.amountInStock = amountInStock;
         this.price = price;
@@ -20,7 +21,7 @@ public abstract class Item {
         this.isDented = false;
     }
 
-    public Item(String type, Department department, int amountInStock, double price, double cost){
+    public Item(String type, Department department, int amountInStock, double price, double cost) {
         this.type = type;
         this.department = department;
         this.amountInStock = amountInStock;
@@ -28,7 +29,6 @@ public abstract class Item {
         this.cost = cost;
         this.isDented = false;
     }
-
 
     public String getType() {
         return type;
@@ -54,8 +54,11 @@ public abstract class Item {
         this.amountInStock = amountInStock;
     }
 
-    public boolean isDented(byte num) {
-        if(num == 6 || num == 66){
+    public boolean isDented() {
+        Random random = new Random();
+        byte num = (byte) random.nextInt(99);
+        if (num == 6 || num == 66 || num == 9 || num == 99) {
+            this.isDented = true;
             return true;
         }
         return false;

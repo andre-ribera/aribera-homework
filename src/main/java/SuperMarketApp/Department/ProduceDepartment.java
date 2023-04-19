@@ -1,4 +1,4 @@
-package homeworkTwo.Department;
+package SuperMarketApp.Department;
 
 public class ProduceDepartment extends Department {
     private final String deptName = "Produce Department";

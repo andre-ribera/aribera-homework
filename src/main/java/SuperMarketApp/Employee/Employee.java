@@ -1,6 +1,6 @@
-package homeworkTwo.Employee;
+package SuperMarketApp.Employee;
 
-import homeworkTwo.Department.Department;
+import SuperMarketApp.Department.Department;
 
 import java.util.Objects;
 

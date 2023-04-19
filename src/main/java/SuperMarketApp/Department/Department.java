@@ -1,4 +1,4 @@
-package homeworkTwo.Department;
+package SuperMarketApp.Department;
 
 public abstract class Department {
     protected byte numEmployees;
