@@ -1,5 +1,9 @@
 package homeworkTwo.Employee;
 
-public class StoreManager extends Employee {
+public class StoreManager extends Manager {
 
+    @Override
+    public String morningMeeting() {
+        return "If you can get me those reports that would be great.";
+    }
 }

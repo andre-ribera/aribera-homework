@@ -5,4 +5,6 @@ public abstract class Manager extends Employee{
     private String doTheBooks;
     private int orderStock;
 
+    public abstract String morningMeeting();
+
 }

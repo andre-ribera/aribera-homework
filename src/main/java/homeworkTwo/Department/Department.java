@@ -1,7 +1,10 @@
 package homeworkTwo.Department;
 
 public abstract class Department {
-    private byte numEmployees;
+    protected byte numEmployees;
+
+    //TODO: make constructor
+
 
     public byte getNumEmployees() {
         return numEmployees;
@@ -9,5 +12,12 @@ public abstract class Department {
 
     public void setNumEmployees(byte numEmployees) {
         this.numEmployees = numEmployees;
+    }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "numEmployees=" + numEmployees +
+                '}';
     }
 }

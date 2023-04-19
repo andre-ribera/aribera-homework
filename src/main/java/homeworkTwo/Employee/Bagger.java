@@ -1,9 +1,8 @@
 package homeworkTwo.Employee;
 
-import homeworkTwo.Item;
+import homeworkTwo.Item.Item;
 import homeworkTwo.ShoppingCart;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
 

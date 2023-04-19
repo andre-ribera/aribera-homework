@@ -1,7 +1,10 @@
 package homeworkTwo;
 
+import homeworkTwo.Item.Item;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class ShoppingCart {
     private ArrayList<Item> contents;
@@ -40,6 +43,28 @@ public class ShoppingCart {
 
     public void setHasWobblyWheel(boolean hasWobblyWheel) {
         this.hasWobblyWheel = hasWobblyWheel;
+    }
+
+    public void addToCart(Item item){
+        this.contents.add(item);
+    }
+
+    @Override
+    public String toString() {
+        return "ShoppingCart{" + "contents=" + contents + '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ShoppingCart that = (ShoppingCart) o;
+        return escape == that.escape && hasWobblyWheel == that.hasWobblyWheel && Objects.equals(contents, that.contents);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(contents, escape, hasWobblyWheel);
     }
 
 }
