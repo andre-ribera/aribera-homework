@@ -2,10 +2,15 @@ package SuperMarketApp.Item;
 
 import SuperMarketApp.Department.ProduceDepartment;
 
-public  class Groceries extends Item {
+public class Groceries extends Item implements Spoilable {
 
     public Groceries(String type, int amountInStock, double price, double cost){
         super(type, new ProduceDepartment(), amountInStock, price, cost);
+    }
+
+    @Override
+    public boolean isSpoiled() {
+        return false;
     }
 
     @Override

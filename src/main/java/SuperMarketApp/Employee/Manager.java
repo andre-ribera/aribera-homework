@@ -21,10 +21,10 @@ public abstract class Manager extends Employee{
         this.orderStock = orderStock;
     }
 
-    public abstract String morningMeeting();
-
     public String doTheBooks() {
         return "doing the books";
     }
+
+    public abstract String morningMeeting();
 
 }

@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class Employee {
     private Department department;
-    private String name;
+    private final String name;
     private double wage;
     private boolean onTheClock;
     private boolean beHelpful;
@@ -17,8 +17,16 @@ public class Employee {
         this.wage = 14.0D;
         this.onTheClock = false;
         this.beHelpful = true;
-
     }
+
+    public Employee(String name){
+        this.department = null;
+        this.name = name;
+        this.wage = 14.0D;
+        this.onTheClock = false;
+        this.beHelpful = true;
+    }
+
     public boolean isHelpful() {
         return beHelpful;
     }
@@ -37,10 +45,6 @@ public class Employee {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public double getWage() {

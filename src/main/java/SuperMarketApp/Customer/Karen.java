@@ -1,7 +1,7 @@
 package SuperMarketApp.Customer;
 
-public class Karen extends Customer {
-    private boolean askForManager;
+public final class Karen extends Customer {
+    private static boolean askForManager;
     private String complaint;
 
     public Karen() {
@@ -21,7 +21,7 @@ public class Karen extends Customer {
         return askForManager;
     }
 
-    public void askForManager(boolean askForManager) {
+    public final void askForManager(boolean askForManager) {
         this.askForManager = askForManager;
     }
 
