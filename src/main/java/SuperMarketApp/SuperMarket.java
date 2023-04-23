@@ -29,11 +29,17 @@ public class SuperMarket {
         karenCart.addToCart(potatoes);
         karenCart.addToCart(milk);
 
-        System.out.println("before bagging " + karenCart.toString());
-
         bobby.bagGroceries(karenCart);
 
-        System.out.println("after bagging " + karenCart.toString());
+        if(karenCart.getContents().contains(true)){
+            karen.askForManager(true);
+            System.out.println(karen.getComplaint());
+        }
+
+        System.out.println(karenCart.getContents());
+
+
+
 
     }
 }
