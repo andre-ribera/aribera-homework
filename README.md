@@ -8,3 +8,8 @@
     * Homework Set Three
         * Added Overrides in ShoppingCart, Employee, 
         * Added protected to Item
+    * Homework Set Four
+        * Added 5 interfaces 
+        * polymorphsim with abstract classes and interfaces
+        * Added final to Karen class, askForManager() method, and to Employee.name variable
+        * Added static to balanceBudget() in StoreMangager class, Karen.askForManager, and static block to Karen class
