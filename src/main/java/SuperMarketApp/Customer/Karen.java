@@ -2,7 +2,13 @@ package SuperMarketApp.Customer;
 
 public final class Karen extends Customer {
     private static boolean askForManager;
-    private String complaint;
+    private static String complaint;
+
+    static {
+        if (askForManager) {
+            complaint = "Do you have any idea who my husband is?!";
+        }
+    }
 
     public Karen() {
         this.askForManager = false;
