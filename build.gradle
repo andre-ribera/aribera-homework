@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
 group 'org.example'
@@ -12,6 +13,18 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'edu.bbte.gradleex.mavenplugin'
+            artifactId = 'gradleex-mavenplugin'
+            version = '1.0.0-SNAPSHOT'
+
+            from components.java
+        }
+    }
 }
 
 test {
