@@ -1,5 +1,8 @@
 package SuperMarketApp.Customer;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public final class Karen extends Customer {
     private static boolean askForManager;
     private static String complaint;
@@ -11,31 +14,35 @@ public final class Karen extends Customer {
     }
 
     public Karen() {
-        this.askForManager = false;
+        askForManager = false;
     }
 
     public Karen(boolean askForManager) {
-        this.askForManager = askForManager;
+        Karen.askForManager = askForManager;
     }
 
     public Karen(boolean askForManager, String complaint) {
         this(askForManager);
-        this.complaint = complaint;
+        Karen.complaint = complaint;
     }
 
     public boolean isAskingForManager() {
         return askForManager;
     }
 
-    public final void askForManager(boolean askForManager) {
-        this.askForManager = askForManager;
+    public final void askForManager() {
+        Karen.askForManager = true;
     }
 
     public String getComplaint() {
+        if(askForManager){
+            this.setComplaint("DO YOU HAVE ANY IDEA WHO MY HUSBAND IS?!");
+        }
+
         return complaint;
     }
 
     public void setComplaint(String complaint) {
-        this.complaint = complaint;
+        Karen.complaint = complaint;
     }
 }

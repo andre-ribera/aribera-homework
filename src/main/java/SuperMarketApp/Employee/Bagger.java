@@ -1,23 +1,19 @@
 package SuperMarketApp.Employee;
 
 import SuperMarketApp.Item.Item;
-import SuperMarketApp.ShoppingCart;
 
 import java.util.ArrayList;
-import java.util.Random;
+import java.util.Queue;
 
 public class Bagger extends Employee {
     private boolean collectCarts;
 
-    public ArrayList<Item> bagGroceries(ShoppingCart groceries){
-//        Random random = new Random();
-//        byte dent = (byte) random.nextInt(99);
-        ArrayList<Item> bags = new ArrayList<>(groceries.getContents().size());
-        groceries.getContents().forEach(item -> item.isDented());
-//        for(Item item : groceries.getContents()){
-//            item.isDented(dent);
-//            bags.add(item);
-//        }
+    public ArrayList<Item> bagGroceries(Queue<Item> groceries){
+        ArrayList<Item> bags = new ArrayList<Item>(groceries.size());
+
+        groceries.forEach(item -> item.isDented());
+        bags.addAll(groceries);
+
         return bags;
     }
 
