@@ -9,7 +9,7 @@ public class Bagger extends Employee {
     private boolean collectCarts;
 
     public ArrayList<Item> bagGroceries(Queue<Item> groceries){
-        ArrayList<Item> bags = new ArrayList<Item>(groceries.size());
+        ArrayList<Item> bags = new ArrayList<>(groceries.size());
 
         groceries.forEach(item -> item.isDented());
         bags.addAll(groceries);

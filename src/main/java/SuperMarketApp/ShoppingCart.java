@@ -4,11 +4,13 @@ import SuperMarketApp.Item.Item;
 
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Stack;
 
 public class ShoppingCart {
     private ArrayList<Item> contents;
     private boolean escape;
     private boolean hasWobblyWheel;
+    private Stack<ShoppingCart> cartCorral = new Stack<>();
 
     public ShoppingCart(){
         this.contents = new ArrayList<>(15);
@@ -46,6 +48,10 @@ public class ShoppingCart {
 
     public void addToCart(Item item){
         this.contents.add(item);
+    }
+
+    public void putCartInCorral(){
+        cartCorral.push(new ShoppingCart());
     }
 
     @Override
