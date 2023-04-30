@@ -18,15 +18,15 @@ public class SuperMarket {
 
     public static void main(String[] args) {
         Customer marge = new Customer("Marge");
-        Customer frederickson = new Customer("Mr. Frederickson");
-        Karen karen = new Karen();
+        Customer fredrickson = new Customer("Mr. Fredrickson");
+        Karen karen = new Karen("Karen");
         Bagger bobby = new Bagger();
         Cashier sueAnne = new Cashier("SueAnne");
         ProduceManager miles = new ProduceManager();
         StoreManager kurt = new StoreManager();
         ShoppingCart karenCart = new ShoppingCart(true);
-        Queue<Customer> checkoutLine = new LinkedList<>();
-        Queue<Item> conveyorBelt = new LinkedList<>();
+        Queue<Item> conveyorBelt;
+        CustomLinkedList<Customer> checkoutLine = new CustomLinkedList<>();
 
         ProduceDepartment produceDepartment = new ProduceDepartment();
 
@@ -48,7 +48,7 @@ public class SuperMarket {
         karenCart.addToCart(salad);
         karenCart.addToCart(celery);
 
-        checkoutLine.add(frederickson);
+        checkoutLine.add(fredrickson);
         checkoutLine.add(marge);
         checkoutLine.add(karen);
 
@@ -59,7 +59,7 @@ public class SuperMarket {
         for (Item item : bobby.bagGroceries(conveyorBelt)) {
             if(item.isDented()){
                 karen.askForManager();
-                System.out.println(karen.getComplaint());
+                System.out.println(karen.getName() + ": " + karen.getComplaint());
             }
         }
 

@@ -1,5 +1,6 @@
 package SuperMarketApp.Customer;
 
+import SuperMarketApp.CustomLinkedList;
 import SuperMarketApp.Item.Item;
 import SuperMarketApp.ShoppingCart;
 

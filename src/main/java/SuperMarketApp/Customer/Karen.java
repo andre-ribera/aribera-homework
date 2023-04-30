@@ -17,6 +17,9 @@ public final class Karen extends Customer {
         askForManager = false;
     }
 
+    public Karen(String name){
+        super(name);
+    }
     public Karen(boolean askForManager) {
         Karen.askForManager = askForManager;
     }

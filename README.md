@@ -10,9 +10,9 @@
         * Added protected to Item
     * Homework Set Four
         * Added 5 interfaces 
-        * polymorphsim with abstract classes and interfaces
+        * Polymorphism with abstract classes and interfaces
         * Added final to Karen class, askForManager() method, and to Employee.name variable
         * Added static to balanceBudget() in StoreManager class, Karen.askForManager, and static block to Karen class
     * Homework Set Six
         * Collections implementations: ShoppingCart, conveyorBelt, Warehouse, checkoutLine (in Main), cartCorral (in ShoppingCart)
-        * Custom LinkedList: conveyorBelt (in Main)
+        * Added CustomLinkedList
