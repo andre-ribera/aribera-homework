@@ -14,4 +14,4 @@
         * Added final to Karen class, askForManager() method, and to Employee.name variable
         * Added static to balanceBudget() in StoreMangager class, Karen.askForManager, and static block to Karen class
     * Homework Set Five
-        * Collections implementations: ShoppingCart, ConveyorBelt, Warehouse, 
+        * Collections implementations: ShoppingCart, ConveyorBelt, Warehouse, checkoutLine (in Main), 
