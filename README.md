@@ -13,5 +13,5 @@
         * polymorphsim with abstract classes and interfaces
         * Added final to Karen class, askForManager() method, and to Employee.name variable
         * Added static to balanceBudget() in StoreMangager class, Karen.askForManager, and static block to Karen class
-    * Homework Set Five
+    * Homework Set Six
         * Collections implementations: ShoppingCart, ConveyorBelt, Warehouse, checkoutLine (in Main), 
